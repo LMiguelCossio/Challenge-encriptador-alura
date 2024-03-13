@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Encriptador de textos</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="style.css">
+        <link rel="shortcut icon" href="https://play-lh.googleusercontent.com/yDjaHCaOn_O89vnY7eOKH6ElEBtJrmN2CSI4yhiP1_GVC2zrxXWSFGxO0lt9-CU0mV4=w240-h480-rw">
+    </head>
+    <body>
+        <header>
+            <img alt="logo-alura" src="Imagenes/Logo.svg">
+        </header>
+        <main>
+            <section class="entrada">
+                <div class="contenedor-texto">
+                    <textarea type="text" class="texto-ingresado" placeholder="Ingrese texto aqui"></textarea>
+                </div>
+
+                <div class="alerta">
+                    <img alt="alerta" src="Imagenes/alerta.svg">
+                    <p>Solo letras minusculas y sin acentos</p>
+                </div>
+
+                <div class="contenedor-botones">
+                    <input type="button" class="boton-encriptar" value="Encriptar">
+                    <input type="button" class="boton-desencriptar" value="Desencriptar">
+                </div>
+            </section>
+
+            <section class="salida">
+                <div class="contenedor-imagen">
+                    <img alt="niño-con-lupa" src="Imagenes/Muñeco.svg">
+                </div>
+                <div class="mensaje">
+                    <h3>Ningún mensaje fue <br>encontrado</h3>
+                    <p>Ingresa el texto que desees encriptar o <br>desencriptar.</p>
+                </div>
+                <div class="resultado">
+                    <p class="texto-resultado"></p>
+                </div>
+                <div>
+                    <input type="button" value="copiar" class="boton-copiar">
+                </div>
+            </section>
+        </main>
+        <script src="script.js"></script>
+    </body>
+</html>
